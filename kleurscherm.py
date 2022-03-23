@@ -3,7 +3,7 @@ import tkinter
 window = tkinter.Tk()
 
 size = 0
-counter = 0
+counter = 7
 colors = ['red','blue','purple','green','yellow','black']
 
 window.title('achtergrond kleur en grote veranderen.')
@@ -15,7 +15,7 @@ def changeColor():
         print('kabooooom!')
         window.destroy()
     else:
-        counter += 1
+        counter -= 1
         size += 50
         window.config(bg=colors[index])
         window.geometry(f'{size}x{size}')
